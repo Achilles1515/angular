@@ -255,8 +255,8 @@ export function createContainerRef(
 
           // A view might be attached either to this or a different container. The `prevIdx` for
           // those cases will be:
-          // equal to -1 for views attached to this ViewContainerRef
-          // >= 0 for views attached to a different ViewContainerRef
+          // equal to -1 for views attached to a different ViewContainerRef
+          // >= 0 for views attached to this ViewContainerRef
           if (prevIdx !== -1) {
             this.detach(prevIdx);
           } else {
